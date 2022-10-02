@@ -1,0 +1,74 @@
+﻿@page
+@model TRGM_Site.Pages.CustomLoadOutPageModel
+@{
+Layout = "/Pages/_GeneralLayout.cshtml";
+}
+
+
+<form method="post">
+<section class="wrapper style4 container">
+
+    <div class="content">
+
+        <h2>1. Paste exported data here:</h2>
+
+        <textarea name="TextInput" rows="2" cols="20" style="height:200px;width:80%;"></textarea>
+
+        <br />
+
+        <h2>
+            2. Select the unit type:
+
+            <select name="UnitType">
+                <option value="AASpecialist">AASpecialist</option>
+                <option value="ATSpecialist">ATSpecialist</option>
+                <option value="Autorifleman">Autorifleman</option>
+                <option value="Engineer">Engineer</option>
+                <option value="ExplosiveSpecialist">ExplosiveSpecialist</option>
+                <option value="Medic">Medic</option>
+                <option value="Pilot">Pilot</option>
+                <option value="ReconMedic">ReconMedic</option>
+                <option value="ReconSniper">ReconSniper</option>
+                <option value="ReconTeamleader">ReconTeamleader</option>
+                <option value="ReconUAVOperator">ReconUAVOperator</option>
+                <option value="Rifleman">Rifleman</option>
+                <option value="Sniper">Sniper</option>
+                <option value="Spotter">Spotter</option>
+                <option value="Teamleader">Teamleader</option>
+                <option value="UAVOperator">UAVOperator</option>
+            </select>
+        </h2>
+
+        <h2>3. Press the "Build" button</h2>
+
+        <input type="submit" value="Build" />
+
+        <h2>4. copy the text below and paste into the textbox in your mission dialog</h2>
+
+        <textarea name="ResultText" rows="2" cols="20" style="height:600px;width:80%;">
+@Model.ResultText
+        </textarea>
+
+        <br />
+
+    </div>
+
+</section>
+</form>
+
+
+
+@*<form method="post">
+    <div class=" container">
+
+        <select name="UnitType">
+            <option value="">Select a unit type</option>
+            <option value="medic">Medic</option>
+            <option value="engineer">Engineer</option>
+            <option value="pilot">Pilot</option>
+        </select>
+
+        <input type="submit" value="Submit" />
+
+    </div>
+</form>*@

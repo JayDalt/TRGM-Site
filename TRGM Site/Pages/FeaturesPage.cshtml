@@ -1,0 +1,460 @@
+﻿@page
+@model TRGM_Site.Pages.FeaturesPageModel
+@{
+    Layout = "/Pages/_GeneralLayout.cshtml";
+}
+
+!DOCTYPE HTML>
+<!--
+    Twenty by HTML5 UP
+    html5up.net |
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+@*<head>
+        <title>FeatureShizzle</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="~/assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="~/assets/css/noscript.css" /></noscript>
+    </head>*@
+<body class="index is-preload">
+    <div id="page-wrapper">
+
+        <!--Header-->
+        <!--<header id="header">
+            <h1 id="logo"><a href="index.html"><img src="images/TRGM_Logo_black.png" /> <span>by Treendy</span></a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="/FeaturesPage">Home</a></li>
+                    <li><a href="/FeaturesPage">Features</a></li>
+                    <li><a href="DownloadsPage">Downloads</a></li>
+                    <li class="submenu">
+                        <a href="#">News</a>
+                        <ul>
+                            <li><a target="_blank" href="http://trgm.proboards.com/">Visit our Forum</a></li>
+                            <li><a href="LatestUpdates.html">Latest Updates</a></li>
+                            <li><a href="FuturePlans.html">Future Plans</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="HowToHelp.html">How to Help</a></li>-->
+        <!--    <li><a target="_blank" href="https://github.com/treendy/TRGM2.Malden" class="button special" style="margin: 0px; border: none; padding:5px; vertical-align: middle; background-color: #000;"><img src="images/GitHub_Logo_White.png" style="height:30px; max-width:300px; " /></a></li> -->
+        <!--<li>
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="XHP3RVGNAZC86">
+                            <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+
+                    </li>
+                </ul>
+
+            </nav>
+        </header>-->
+        <!-- Main -->
+        <article id="main">
+
+            <!-- Article -->
+            <section class="wrapper style3 container special">
+
+                <header class="major">
+                    <h2><strong>TRGM 2 Features</strong></h2>
+                </header>
+
+                @*start of 1st set*@
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <section>
+                            <a href="#" class="image featured"><img src="images/TRGM_GUI_ARMA_3.jpg" alt="" /></a>
+                            <header>
+                                <h3>Startup options</h3>
+                            </header>
+                            <p>This GUI will allow you to select main to mini missions, or choose which type of mission to play.  Will also allow you to set other settings like NVG, weather/time, and other settings adjust the mission to your style of play.</p>
+                        </section>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+
+                        <section>
+                            <a href="#" class="image featured"><img src="/images/TRGM_Reputation_feature.jpg" alt="" /></a>
+                            <header>
+                                <h3>Reputation</h3>
+                            </header>
+                            <p>Try to watch your fire now, and don’t just waste your assets, If you lose guys, kill civilians, attack friendly rebels and lose main assets, your reputation will lower.  If you make too many mistakes high command will see you as a liability and call you back to base, failing all your objectives!</p>
+                        </section>
+
+                    </div>
+                </div>
+                @*start of 2nd set*@
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <section>
+                            <a href="#" class="image featured"><img src="~/images/TRMG_Enemy_AI.jpg" alt="" /></a>
+                            <header>
+                                <h3>Enemy Comms (AI)</h3>
+                            </header>
+                            <p>When you or your team are spotted, the enemy will react accordingly, by calling in a patrol to investigate, call air support, or call in a nearby mortar team to fire rounds at your position. I have scripted the AI to seem like a human is running the enemy, making choices based on what is happening and what you are using.</p>
+                        </section>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+
+                        <section>
+                            <a href="#" class="image featured"><img src="~/images/TRGM_Comms_Tower.jpg" alt="" /></a>
+                            <header>
+                                <h3>Comms Tower</h3>
+                            </header>
+                            <p>These will not show on the map, if you see a tower, move close to it and you should see an option to listen in to the signal.  If the enemy are using it, you can destroy the tower, this will make it harder for the enemy to call in air support and reinforcements.</p>
+                        </section>
+                    </div>
+                </div>
+                @*start of 3rd set*@
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <section>
+                            <span class="image featured"><img src="images/TRGM_Arma_3_Checkpoints.jpg" alt="" /></span>
+                            <header>
+                                <h3>Checkpoints</h3>
+                            </header>
+                            <p>Randomly placed checkpoints in the form of roadblocks, or just sentry positions, could be a few in the centre of the AO or some scattered around a larger range.  Be careful, do not assume they are enemy, you may stumble across a friendly checkpoint (chat with them to gain some intel).</p>
+                        </section>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+
+                        <section>
+                            <span class="image featured"><img src="images/TRGM_Events.jpg" alt="" /></span>
+                            <header>
+                                <h3>Events</h3>
+                            </header>
+                            <p>Events may occur during a mission playthrough, for example you could spot a smoke trail and the location of a downed friendly chopper, help the crew and gain some reputation. Another event could be an enemy camp, clear it and search it for some intel of your AO.</p>
+                        </section>
+                    </div>
+                </div>
+                @*start of 4th set*@
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <section>
+                            <span class="image featured"><img src="images/picPatrols.jpg" alt="" /></span>
+                            <header>
+                                <h3>Patrols</h3>
+                            </header>
+                            <p>I have spent time on making these patrols to not seem random.  There will be patrols scouting around the AO, some patrols will be moving from building to building, with a mix of wide patrols and groups that patrol in the centre of the AO.</p>
+                        </section>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+
+                        <section>
+                            <span class="image featured"><img src="images/picAir.jpg" alt="" /></span>
+                            <header>
+                                <h3>Air Support</h3>
+                            </header>
+                            <p>If you are spotted in the AO, enemy may call in air support depending on your threat. If they see you causing mayhem in the air they will call in Air to Air support, or if you are in a tank or just ground units, then Air to Ground support may be on the way.</p>
+                        </section>
+                    </div>
+                </div>
+                @*start of 5th set*@
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <section>
+                            <span class="image featured"><img src="images/picReInf.jpg" alt="" /></span>
+                            <header>
+                                <h3>Reinforcements</h3>
+                            </header>
+                            <p>If the enemy feel they need some extra support, they will call in for reinforcements to fly to the AO, calling in a transport chopper or truck to drop off enemy forces to protect the AO or search for you.</p>
+                        </section>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+
+                        <section>
+                            <span class="image featured"><img src="images/picMort.jpg" alt="" /></span>
+                            <header>
+                                <h3>Mortar Teams</h3>
+                            </header>
+                            <p>If there is an enemy mortar team present, then don’t be too relaxed about standing around! If an enemy unit know your position and see you are not moving too much, they may call a nearby mortar team to fire rounds on your location.</p>
+                        </section>
+                    </div>
+                </div>
+                @*start of 6th set*@
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <section>
+                            <span class="image featured"><img src="images/picciv.jpg" alt="" /></span>
+                            <header>
+                                <h3>Civilians</h3>
+                            </header>
+                            <p>If you stumble across a town with civilians, watch your fire, if you kill any innocent civilians your reputation will drop! But be careful, some of these civilians are out to get you, they may pull a gun on you or charge at you with a suicide vest (you can search civilians to confirm if they are carrying a gun)</p>
+                        </section>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+
+                        <section>
+                            <span class="image featured"><img src="images/picFriendReb.jpg" alt="" /></span>
+                            <header>
+                                <h3>Friendly Rebels</h3>
+                            </header>
+                            <p>These will not show on the map, if you see a tower, move close to it and you should see an option to listen in to the signal.  If the enemy are using it, you can destroy the tower, this will make it harder for the enemy to call in air support and reinforcements.</p>
+                        </section>
+                    </div>
+                </div>
+                @*start of 7th set*@
+                <div class="row">
+                    <div class="col-6 col-12-narrower">
+                        <section>
+                            <span class="image featured"><img src="images/picArt.jpg" alt="" /></span>
+                            <header>
+                                <h3>Arti Support</h3>
+                            </header>
+                            <p>If activated in mission settings, you will have to enter the grid references to call a guided round in, work out the 10 grid ref to get an accurate hit (if you have Ace you can use the Vector 21 and MicroDagre to get this reference)</p>
+                        </section>
+                    </div>
+                    <div class="col-6 col-12-narrower">
+
+                        <section>
+                            <span class="image featured"><img src="images/picIED.jpg" alt="" /></span>
+                            <header>
+                                <h3>IEDs</h3>
+                            </header>
+                            <p>Watch your step, there may be IEDs scattered around the AO, or even car bombs or IEDs anywhere on the map.  If you hit one and are still alive, watch out, you may get ambushed by an enemy group in hiding!</p>
+                        </section>
+                    </div>
+                </div>
+                @*end of 7th set*@
+
+
+            </section>
+
+        </article>
+
+        <!-- Footer -->
+        <!--<footer id="footer">
+
+            <ul class="icons">
+                <li><a href="https://twitter.com/MrTreendy" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCJ9w0AG5PcdH2V3U1JCJHAQ" class="icon brands circle fa-youtube"><span class="label">YouTube</span></a></li>
+                <li><a href="https://www.facebook.com/MrTreendy/" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+            </ul>
+
+            <ul class="copyright">
+                <li>&copy; 2021 TRGM</li>
+            </ul>
+
+
+            <!-- Default Statcounter code for TRGM2 http://www.trgm2.com -->
+        <!--<script type="text/javascript">
+            var sc_project = 11768910;
+            var sc_invisible = 0;
+            var sc_security = "d3af8b69";
+
+            //var scJsHost = (("https:" == document.location.protocol) ? "https://secure." :
+            //    "http://www.");
+
+            document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+                "statcounter.com/counter/counter.js'></" + "script>");
+        </script>
+
+        <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+        <span class="statcounter"><a id="sc_counter_11768910" class="statcounter" href="https://www.statcounter.com/" target="_blank"><img src="https://c.statcounter.com/t.php?u1=CD40D345505F4FB0E4C927C1A53D4DD6&amp;sc_project=11768910&amp;java=1&amp;security=d3af8b69&amp;sc_snum=1&amp;sess=eb480c&amp;sc_rum_e_s=69&amp;sc_rum_e_e=80&amp;p=0&amp;rcat=o&amp;rdomo=google&amp;rdomg=1&amp;jg=1&amp;rr=5.4.4.4.4.4.2.2.1&amp;resolution=1536&amp;h=864&amp;camefrom=http%3A//trgm2.com/Features.html&amp;u=http%3A//trgm2.com/Features.html&amp;t=TRGM%202%20for%20Arma%203%20-%20Features&amp;sc_random=0.48807925431763244" alt="StatCounter - Free Web Tracker and Counter" border="0" undefined=""></a></span>
+
+
+        <noscript>
+            <div class="statcounter">
+                <a title="Web Analytics"
+                   href="http://statcounter.com/" target="_blank">
+                    <img class="statcounter"
+                         src="//c.statcounter.com/11768910/0/d3af8b69/0/" alt="Web Analytics">
+                </a>
+            </div>
+        </noscript>-->
+        @*End of Statcounter Code*@
+
+        @*</footer>*@
+    </div>
+
+
+
+</body>
+</html>
+
+
+<!-- Header -->
+<!--<header id="header" class="alt">
+    <h1 id="logo"><a href="index.html">Twenty <span>by HTML5 UP</span></a></h1>-->
+<!--Top left of page-->
+<!--<nav id="nav">
+        <ul>
+            <li class="current"><a href="index.html">Welcome</a></li>
+            <li class="submenu">
+                <a href="#">Layouts</a>
+                <ul>
+                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                    <li><a href="no-sidebar.html">No Sidebar</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="submenu">
+                        <a href="#">Submenu</a>
+                        <ul>
+                            <li><a href="#">Dolore Sed</a></li>
+                            <li><a href="#">Consequat</a></li>
+                            <li><a href="#">Lorem Magna</a></li>
+                            <li><a href="#">Sed Magna</a></li>
+                            <li><a href="#">Ipsum Nisl</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" class="button primary">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>-->
+<!-- Banner -->
+<!--<section id="banner">-->
+<!--
+    ".inner" is set up as an inline-block so it automatically expands
+    in both directions to fit whatever's inside it. This means it won't
+    automatically wrap lines, so be sure to use line breaks where
+    appropriate (<br />).
+-->
+<!--<div class="inner">
+
+        <header>
+            <h2>Poo</h2>
+        </header>
+        <p>
+            This is <strong>Twenty</strong>, a free
+            <br />
+            responsive template
+            <br />
+            by <a href="http://html5up.net">HTML5 UP</a>.
+        </p>
+        <footer>
+            <ul class="buttons stacked">
+                <li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+</section>-->
+@*<header class="special container">
+        <span class="icon solid fa-chart-bar"></span>
+        <h2>
+            As this is my <strong>twentieth</strong> freebie for HTML5 UP
+            <br />
+            I decided to give it a really creative name.
+        </h2>
+        <p>
+            Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+            <br />
+            it's minimally designed, fully responsive, built on HTML5/CSS3,
+            and, like all my stuff,
+            <br />
+            released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!
+        </p>
+    </header>*@
+
+<!-- One -->
+<!--<section class="wrapper style2 container special-alt">
+    <div class="row gtr-50">
+        <div class="col-8 col-12-narrower">
+
+            <header>
+                <h2>Behold the <strong>icons</strong> that visualize what you’re all about. or just take up space. your call bro.</h2>
+            </header>
+            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu comteger ut fermentum lorem. Lorem ipsum dolor sit amet. Sed tristique purus vitae volutpat ultrices. eu elit eget commodo. Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo.</p>
+            <footer>
+                <ul class="buttons">
+                    <li><a href="#" class="button">Find Out More</a></li>
+                </ul>
+            </footer>
+
+        </div>
+        <div class="col-4 col-12-narrower imp-narrower">
+
+            <ul class="featured-icons">
+                <li><span class="icon fa-clock"><span class="label">Feature 1</span></span></li>
+                <li><span class="icon solid fa-volume-up"><span class="label">Feature 2</span></span></li>
+                <li><span class="icon solid fa-laptop"><span class="label">Feature 3</span></span></li>
+                <li><span class="icon solid fa-inbox"><span class="label">Feature 4</span></span></li>
+                <li><span class="icon solid fa-lock"><span class="label">Feature 5</span></span></li>
+                <li><span class="icon solid fa-cog"><span class="label">Feature 6</span></span></li>
+            </ul>
+
+        </div>
+    </div>
+</section>-->
+<!-- Two -->
+<!--<section class="wrapper style1 container special">
+    <div class="row">
+        <div class="col-4 col-12-narrower">
+
+            <section>
+                <span class="icon solid featured fa-check"></span>
+                <header>
+                    <h3>This is Something</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+            </section>
+
+        </div>
+        <div class="col-4 col-12-narrower">
+
+            <section>
+                <span class="icon solid featured fa-check"></span>
+                <header>
+                    <h3>Also Something</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+            </section>
+
+        </div>
+        <div class="col-4 col-12-narrower">
+
+            <section>
+                <span class="icon solid featured fa-check"></span>
+                <header>
+                    <h3>Probably Something</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+            </section>
+
+        </div>
+    </div>
+</section>-->
+<!-- Two -->
+<!--<section class="wrapper style1 container special">
+    <div class="row">
+        <div class="col-4 col-12-narrower">
+
+            <section>
+                <span class="icon solid featured fa-check"></span>
+                <header>
+                    <h3>This is Something</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+            </section>
+
+        </div>
+        <div class="col-4 col-12-narrower">
+
+            <section>
+                <span class="icon solid featured fa-check"></span>
+                <header>
+                    <h3>Also Something</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+            </section>
+
+        </div>
+        <div class="col-4 col-12-narrower">
+
+            <section>
+                <span class="icon solid featured fa-check"></span>
+                <header>
+                    <h3>Probably Something</h3>
+                </header>
+                <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+            </section>
+
+        </div>
+    </div>
+</section>-->
