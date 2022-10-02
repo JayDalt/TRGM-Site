@@ -2,9 +2,221 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    Layout = "/Pages/_HomeLayout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+@*Banner*@
+
+<section id="banner">
+    <div class="inner">
+        <p>
+            <img src="~/images/bigTRGM_Logo.png" style="width:70%; max-width:300px;" />
+        </p>
+        <p>
+            Welcome to <strong>TRGM 2</strong>
+            <br />
+            Randomly Generated Missions for <strong>Arma 3</strong>
+            <br />
+            by Treendy
+        </p>
+        <footer>
+            <ul class="buttons">
+                <li><a target="_blank" href="http://trgm.proboards.com/" class="button">Our Forum</a></li>
+                <li><a target="_blank" href="https://github.com/treendy/TRGM2.Malden" class="button">TRGM2 GitHub</a></li>
+            </ul>
+        </footer>
+    </div>
+</section>
+
+
+<!-- Main -->
+<article id="main">
+
+    <header class="special container">
+        <span class="icon fa-hand-point-down"></span>
+        <h2><strong>Arma 3 - Treendy's Randomly Generated Missions (TRGM) 2</strong></h2>
+        <p>
+            I created <strong>TRGM for Arma 3</strong> after creating and playing many workshop missions for Arma 3, It got to a stage where things were a bit predictable and wanted
+            a way I could play missions with friends with none of us knowing what, where, and when things were going to happen.
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            The TRGM missions did ok on Steam Workshop and our Tactical Cannon Fodder group have played many hours on it now, so I thought I would spend more time on breaking out some of the code in TRGM to
+            allow me to create more variations, more missions, events, AI behaviour etc...  so was born <strong>TRGM 2</strong>  : )
+        </p>
+
+        <h4>Follow Me</h4>
+        <p>
+            If you want to support my work, there are quite a few ways to do so... if you visit my <a target="_blank" href="https://steamcommunity.com/id/treendy76/myworkshopfiles/?appid=107410">steam workshop</a> page and follow me, or give a thumbs up and comment, it really means a lot... these thumbs up ratings, help move my work up the workshop pages.
+            Follow me on steam, or subscribe to my YouTube account, its nice to know my videos are being watched.
+        </p>
+        <p>
+            <h4>Donations</h4>
+            If you really want to, you can make a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XHP3RVGNAZC86">donation here</a>. I would love to dedicate more time to the TRGM2 engine, making updates, fixes and adding new features, so I would love to take some time off work to spend full days on my engine. Give me your money : )
+        </p>
+        <p>
+            <h2><strong>TRGM2 Discord</strong></h2>
+            Join our community, if you have any questions, or having problems, here is the place to comment : <a target="_blank" href="https://discord.gg/qYrjgJs">https://discord.gg/qYrjgJs</a>
+        </p>
+    </header>
+
+    @*Video*@
+
+    <section class="wrapper style3 container special-alt">
+        <div class="row 50%">
+            <div class="col-8 col-12-narrower">
+                <header>
+                    <h2>Trailer</h2>
+                </header>
+                <p>
+                    <iframe class="homeYoutubeClip" height="315" width="575" src="https://www.youtube.com/embed/iQ8CvqmhBzc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </p>
+            </div>
+            <div class="col-4 col-12-narrower">
+                <header>
+                    <h2>&nbsp;</h2>
+                </header>
+                <p>
+                    A short video of some of the features of TRGM2.  If you want to see all the features available, the view <a href="Features.html">here</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    @*section2*@
+
+    <section class="special container">
+        <div class="row">
+            <div class="col-4 col-12-narrower">
+                <section>
+                    <span class="icon fa-newspaper"></span>
+                    <header>
+                        <h3>Randomly</h3>
+                    </header>
+                    <p>The Mission type, AO, target buildings, patrols, enemy numbers, enemy unit types are all randomly selected so each time you play, you will have no idea what you are facing.</p>
+                </section>
+
+            </div>
+            <div class="col-4 col-12-narrower">
+
+                <section>
+                    <span class="icon fa-building"></span>
+                    <header>
+                        <h3>Generated</h3>
+                    </header>
+                    <p>A lot of care has gone into how everything is generated, trying to get every aspect to look like it was placed individually with suitable terrain and areas for each placement.</p>
+                </section>
+            </div>
+            <div class="col-4 col-12-narrower">
+                <section>
+                    <span class="icon fa-newspaper"></span>
+                    <header>
+                        <h3>Missions</h3>
+                    </header>
+                    <p>The idea is a single main objective, game time could be from 45 mins to over an hour (or more depending on your play style), once completed, you can restart and will be completely different!</p>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    @*section 3*@
+
+    <section class="wrapper style3 container special">
+        <header class="major">
+            <h2><strong>Just a few features</strong></h2>
+        </header>
+
+        @*start of 1st set*@
+
+        <div class="row">
+            <div class="col-6 col-12-narrower">
+                <section>
+                    <a href="#" class="image featured"><img src="images/TRGM_GUI_ARMA_3.jpg" alt="" /></a>
+                    <header>
+                        <h3>Startup options</h3>
+                    </header>
+                    <p>This GUI will allow you to select main to mini missions, or choose which type of mission to play.  Will also allow you to set other settings like NVG, weather/time, and other settings adjust the mission to your style of play.</p>
+                </section>
+            </div>
+            <div class="col-6 col-12-narrower">
+
+                <section>
+                    <a href="#" class="image featured"><img src="/images/TRGM_Reputation_feature.jpg" alt="" /></a>
+                    <header>
+                        <h3>Reputation</h3>
+                    </header>
+                    <p>Try to watch your fire now, and don’t just waste your assets, If you lose guys, kill civilians, attack friendly rebels and lose main assets, your reputation will lower.  If you make too many mistakes high command will see you as a liability and call you back to base, failing all your objectives!</p>
+                </section>
+
+            </div>
+        </div>
+        @*start of 2nd set*@
+        <div class="row">
+            <div class="col-6 col-12-narrower">
+                <section>
+                    <a href="#" class="image featured"><img src="~/images/TRMG_Enemy_AI.jpg" alt="" /></a>
+                    <header>
+                        <h3>Enemy Comms (AI)</h3>
+                    </header>
+                    <p>When you or your team are spotted, the enemy will react accordingly, by calling in a patrol to investigate, call air support, or call in a nearby mortar team to fire rounds at your position. I have scripted the AI to seem like a human is running the enemy, making choices based on what is happening and what you are using.</p>
+                </section>
+            </div>
+            <div class="col-6 col-12-narrower">
+
+                <section>
+                    <a href="#" class="image featured"><img src="~/images/TRGM_Comms_Tower.jpg" alt="" /></a>
+                    <header>
+                        <h3>Comms Tower</h3>
+                    </header>
+                    <p>These will not show on the map, if you see a tower, move close to it and you should see an option to listen in to the signal.  If the enemy are using it, you can destroy the tower, this will make it harder for the enemy to call in air support and reinforcements.</p>
+                </section>
+            </div>
+        </div>
+
+        <footer class="major">
+            <ul class="buttons">
+                <li><a href="/FeaturesPage" class="button">See More</a></li>
+            </ul>
+        </footer>
+    </section>
+</article>
+
+<!-- section 4 -->
+<section id="banner">
+    <header>
+        <h2>Ready to <strong>fight!</strong></h2>
+        <p>View the Steam Workshop or download direct from here</p>
+    </header>
+    <footer>
+        <ul class="buttons">
+            <li><a href="https://steamcommunity.com/id/treendy76/myworkshopfiles/?appid=107410" target="_blank" class="button special">Arma 3 Steam Workshop</a></li>
+            <li><a href="/DownloadsPage" class="button">Downloads</a></li>
+        </ul>
+    </footer>
+</section>
+
+
+
+@*<div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
+
+
+
+
+@*<i class="fas fa-fighter-jet"></i>*@
+@*working icons*@
+@*
+    <span class="icon fa-hand-peace"></span>
+        <span class="icon fa-hand-point-down"></span>
+        <span class="icon fa-hand-point-left"></span>
+        <span class="icon fa-hand-point-right"></span>
+        <span class="icon fa-hand-point-up"></span>
+        <span class="icon fa-handshake"></span>
+
+        <span class="icon fa-building"></span>
+        newspaper
+
+*@

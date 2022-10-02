@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="~/assets/css/noscript.css" /></noscript>
+
+    <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+
+
+
+    <header id="header" class="alt">
+        <a href="https://twitter.com/MrTreendy" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a>
+        <a href="https://www.youtube.com/channel/UCJ9w0AG5PcdH2V3U1JCJHAQ" class="icon brands circle fa-youtube"><span class="label">YouTube</span></a>
+        <a href="https://www.facebook.com/MrTreendy/" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a>
+
+        <nav id="nav">
+            <ul>
+                <li class="current"><a href="/Index">Home</a></li>
+                <li><a href="/FeaturesPage">Features</a></li>
+                <li><a href="/DownloadsPage">Downloads</a></li>
+                <li><a href="/CustomLoadoutPage">Custom Loadouts</a></li>
+                <li class="submenu">
+                    <a href="#">News</a>
+                    <ul>
+                        <li><a target="_blank" href="http://trgm.proboards.com/">Visit our Forum</a></li>
+                        <li><a href="/LatestUpdates">Latest Updates</a></li>
+                        <li><a href="/FuturePlans">Future Plans</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/HowToHelp">How to Help</a></li>
+                <li>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="XHP3RVGNAZC86">
+                        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+    @*Footer*@
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://twitter.com/MrTreendy" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCJ9w0AG5PcdH2V3U1JCJHAQ" class="icon brands circle fa-youtube"><span class="label">YouTube</span></a></li>
+            <li><a href="https://www.facebook.com/MrTreendy/" class="icon brands circle fa-facebook-f"><span class="label">Facebook</span></a></li>
+        </ul>
+
+        <ul class="copyright">
+            <li>&copy; 2021 TRGM</li>
+        </ul>
+
+        <!-- Default Statcounter code -->
+
+        <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+        <span class="statcounter"><a id="sc_counter_11768910" class="statcounter" href="https://www.statcounter.com/" target="_blank"><img src="~/images/statcounter.gif" alt="StatCounter - Free Web Tracker and Counter" border="0" undefined=""></a></span>
+
+        @*End of Statcounter Code*@
+    </footer>
+</body>
+</html>
+
+
+@*Scripts*@
+<script src="~/assets/js/jquery.min.js"></script>
+<script src="~/assets/js/jquery.dropotron.min.js"></script>
+<script src="~/assets/js/jquery.scrolly.min.js"></script>
+<script src="~/assets/js/jquery.scrollex.min.js"></script>
+<script src="~/assets/js/browser.min.js"></script>
+<script src="~/assets/js/breakpoints.min.js"></script>
+<script src="~/assets/js/util.js"></script>
+<script src="~/assets/js/main.js"></script>
+@*added scripts*@
+<script src="~/assets/js/skel.min.js"></script>
+<script src="~/assets/js/jquery.scrollgress.min.js"></script>
+
+
+
+@*<header id="header" class="alt">
+        <h1 id="logo"><a href="index.html"><img src="images/TRGM_Logo_black.png" /> <span>by Treendy</span></a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="current"><a href="/Index">Home</a></li>
+                <li><a href="/FeaturesPage">Features</a></li>
+                <li><a href="/DownloadsPage">Downloads</a></li>
+                <li class="submenu">
+                    <a href="#">News</a>
+                    <ul>
+                        <li><a target="_blank" href="http://trgm.proboards.com/">Visit our Forum</a></li>
+                        <li><a href="/LatestUpdates">Latest Updates</a></li>
+                        <li><a href="/FuturePlans">Future Plans</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="HowToHelp.html">How to Help</a></li>
+                <li>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="XHP3RVGNAZC86">
+                        <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>*@
+
+
+
+@*old stat counter stuffs*@
+
+@*<script type="text/javascript">
+        var sc_project = 11768910;
+        var sc_invisible = 0;
+        var sc_security = "d3af8b69";
+
+        document.write("<sc" + "ript type='text/javascript' src='" + scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+    <span class="statcounter"><a id="sc_counter_11768910" class="statcounter" href="https://www.statcounter.com/" target="_blank"><img src="https://c.statcounter.com/t.php?u1=CD40D345505F4FB0E4C927C1A53D4DD6&amp;sc_project=11768910&amp;java=1&amp;security=d3af8b69&amp;sc_snum=1&amp;sess=eb480c&amp;sc_rum_e_s=69&amp;sc_rum_e_e=80&amp;p=0&amp;rcat=o&amp;rdomo=google&amp;rdomg=1&amp;jg=1&amp;rr=5.4.4.4.4.4.2.2.1&amp;resolution=1536&amp;h=864&amp;camefrom=http%3A//trgm2.com/Features.html&amp;u=http%3A//trgm2.com/Features.html&amp;t=TRGM%202%20for%20Arma%203%20-%20Features&amp;sc_random=0.48807925431763244" alt="StatCounter - Free Web Tracker and Counter" border="0" undefined=""></a></span>
+
+    <noscript>
+        <div class="statcounter">
+            <a title="Web Analytics"
+               href="http://statcounter.com/" target="_blank">
+                <img class="statcounter"
+                     src="//c.statcounter.com/11768910/0/d3af8b69/0/" alt="Web Analytics">
+            </a>
+        </div>
+    </noscript>*@
+
+
+@*<title>@ViewBag.Title</title>*@
